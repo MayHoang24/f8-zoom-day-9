@@ -277,4 +277,67 @@ a {
     font-size: 3.5rem;
 }
 
-/* Contact Form */
+/*Form Contact  */
+.form-contact {
+    margin-top: 110px;
+}
+
+.form-contact__group {
+    --columns: 2;
+    --spacing: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: var(--spacing);
+    margin-left: calc(-1 * var(--spacing));
+}
+
+.form-contact__input {
+    width: calc(100% / 2 - var(--spacing));
+    margin-left: var(--spacing);
+
+    padding: 0 20px;
+    line-height: 70px;
+}
+
+.form-contact__input,
+.form-contact__textarea {
+    border: 1px solid #f3f0fa;
+    background: #f3f0fa;
+    outline: none;
+}
+
+.form-contact__textarea {
+    margin-left: var(--spacing);
+
+    padding: 30px;
+    height: 400px;
+    max-height: 400px;
+    width: 100%;
+    resize: none;
+}
+
+.form-contact .focus:focus {
+    border: 1px solid var(--secondary);
+}
+
+.form-contact__btn {
+    margin-top: 30px;
+    font-size: 1.8rem;
+    width: 150px;
+    line-height: 45px;
+    background: var(--secondary);
+    color: var(--primary-text-color);
+    border: none;
+    transition: background ease 0.6s;
+}
+
+.form-contact__btn:hover {
+    background: var(--primary);
+}
+
+/* Contact Map */
+.contact-map {
+    background-image: url(../img/contact-map-img.png) no-repeat center;
+    background-size: cover;
+}
