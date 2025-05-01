@@ -338,6 +338,121 @@ a {
 
 /* Contact Map */
 .contact-map {
+    margin-top: 110px;
+    width: 100%;
+    height: 500px;
     background-image: url(../img/contact-map-img.png) no-repeat center;
     background-size: cover;
+}
+
+/* =======Css Footer======= */
+.footer {
+    margin-top: 110px;
+    background: #151515;
+    padding: 80px 0 160px 0;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+
+    color: #fff9;
+}
+
+.footer__col {
+    max-width: 270px;
+}
+
+.footer__desc,
+.footer__copyright {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    line-height: 22px;
+}
+
+.footer__download {
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+}
+
+.footer__title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-text-color);
+}
+
+.footer__list,
+.footer__subtitle {
+    margin-top: 38px;
+}
+
+.footer__item {
+    line-height: 30px;
+    transition: color ease 0.3s;
+}
+
+.footer__item:hover {
+    color: var(--primary);
+}
+
+.footer__form {
+    margin-top: 30px;
+    width: 100%;
+    height: 40px;
+    background: #272727;
+    border: none;
+    border-radius: 20px;
+    color: #fff9;
+}
+
+.footer__form-input {
+    width: 100%;
+    height: 100%;
+    padding: 4px 16px;
+    color: currentColor;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.footer__form-btn {
+    margin-top: 10px;
+    width: 95px;
+    line-height: 40px;
+    background: var(--primary);
+    border: none;
+    border-radius: 999px;
+    color: var(--primary-text-color);
+    letter-spacing: 1.5px;
+    transition: all ease 0.3s;
+}
+
+.footer__form-btn:hover {
+    color: var(--primary);
+    background: var(--primary-text-color);
+}
+
+/* =======Css Btn Outside======= */
+.btn-outside {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    right: 6px;
+    bottom: 6px;
+    background: var(--primary);
+}
+
+.btn-outside::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    rotate: 135deg;
+    border-left: 3px solid var(--primary-text-color);
+    border-bottom: 3px solid var(--primary-text-color);
+    border-radius: 2px;
+    top: 18px;
+    left: 14px;
 }
