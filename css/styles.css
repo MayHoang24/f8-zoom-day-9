@@ -214,3 +214,67 @@ a {
 }
 
 /* =======Css Main======= */
+.main {
+    margin-top: 110px;
+}
+
+/* Our Contact */
+.our-contact {
+    display: flex;
+    gap: 30px;
+}
+
+.our-contact__img {
+    width: 670px;
+    height: 600px;
+    object-fit: cover;
+    aspect-ratio: 52 / 49;
+}
+
+.contact-info {
+    flex-grow: 1;
+    background: url(../img/our-contact-info.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.contact-info__inner {
+    padding: 60px;
+    height: 100%;
+    background: #773ceed9;
+}
+
+.contact-info__title {
+    position: relative;
+    font-size: 3.2rem;
+    font-weight: normal;
+    color: var(--primary-text-color);
+    margin-bottom: 108px;
+}
+
+.contact-info__title::after {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background: #f2b604;
+    left: 0;
+    bottom: -18px;
+}
+
+.contact-info__aside {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    font-size: 2.4rem;
+    line-height: 32px;
+    font-weight: 600;
+    color: var(--primary-text-color);
+}
+
+.contact-info__aside--icon {
+    font-size: 3.5rem;
+}
+
+/* Contact Form */
