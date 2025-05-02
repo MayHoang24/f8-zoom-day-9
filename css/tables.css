@@ -76,6 +76,10 @@ strong {
     border: none;
 }
 
+.admin-table__body:nth-child(even) {
+    background: #f9f9f9;
+}
+
 .admin-table__body td {
     padding: 0 10px;
     border: 1px solid #ebebed;
