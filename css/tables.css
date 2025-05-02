@@ -7,6 +7,7 @@ html {
 }
 
 body {
+    font-size: 1.6rem;
     padding: 0;
     margin: 0;
 }
@@ -17,26 +18,108 @@ strong {
 }
 
 .container {
-    width: 1000px;
+    width: 1200px;
     margin: 60px auto;
 }
 
-table {
+/* =====Css Table==== */
+.table {
     width: 840px;
     border: 2px solid #000;
     text-align: center;
     font-size: 1.8rem;
 }
 
-th {
+.table th {
     padding: 15px;
     text-align: center;
     line-height: 1.4;
 }
 
-td {
+.table td {
     width: 64px;
     max-width: 64px;
     border: 2px solid #000;
     line-height: 30px;
+}
+
+/* =====Css Admin Table ==== */
+.admin-table {
+    width: 100%;
+    border-collapse: separate;
+    border: 1px solid #ebebed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.admin-table thead tr {
+    background: #ebebed;
+    border-top: none;
+}
+
+.admin-table thead tr .admin-table__title:nth-child(even) {
+    text-align: center;
+}
+
+.admin-table thead tr .admin-table__title:last-child {
+    text-align: right;
+}
+
+.admin-table__title {
+    padding: 0 10px;
+    text-align: left;
+    font-weight: 600;
+    line-height: 40px;
+    border-right: 2px solid #fff;
+}
+
+.admin-table__title:last-child {
+    border: none;
+}
+
+.admin-table__body td {
+    padding: 0 10px;
+    border: 1px solid #ebebed;
+    line-height: 40px;
+    vertical-align: middle;
+}
+
+.admin-table__body td:nth-child(4n -2) {
+    text-align: right;
+}
+
+.admin-table__body td:nth-child(4) {
+    text-align: center;
+}
+
+.admin-table__info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.admin-table__avatar {
+    position: relative;
+    width: 26px;
+    height: 26px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Css Btn */
+.btn {
+    line-height: 24px;
+    border: none;
+    border-radius: 4px;
+}
+
+.btn-active {
+    min-width: 50px;
+    background: #daeae0;
+    color: #33995a;
+}
+
+.btn-not-found {
+    min-width: 80px;
+    background: #f5ecd6;
+    color: #f5c239;
 }
